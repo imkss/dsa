@@ -6,12 +6,12 @@ Welcome to my Java and Data Structures and Algorithms (DSA) Learning Journey rep
 ### Hello.java
 ```java
 public class Hello {
-  // main method
-  public static void main(String[] args)
-  {
-    // Output: Hello, world!
-    System.out.println("Hello, world!");
-  }
+    // main method
+    public static void main(String[] args)
+    {
+        // Output: Hello, world!
+        System.out.println("Hello, world!");
+    }
 }
 ```
 Compiling and running
@@ -32,7 +32,7 @@ boolean bool = true;
 String site = "cheatsheets.zip";
 ```
 
-### Primitive Data Types 
+### Primitive Data Types
 | Data Type | Size   | Default | Range               |
 |-----------|--------|---------|---------------------|
 | `byte`    | 1 byte | 0       | -128 to 127         |
@@ -412,7 +412,7 @@ if (k > 20) {
 }
 ```
 
-### Switch 
+### Switch
 ```java
 int month = 3;
 String str;
@@ -759,14 +759,14 @@ multi-line comment!
 - while
 
 
-### Math methods 
+### Math methods
 
 | Method                | Description            |
 |-----------------------|------------------------|
 | `Math.max(a,b)`       | Maximum of a and b     |
 | `Math.min(a,b)`       | Minimum of a and b     |
-| `Integer.MIN_VALUE`   | 2^31-1 = 2147483647    |
-| `Integer.MAX_VALUE`   | -2^31 = -2147483648    |
+| `Integer.MAX_VALUE`   | 2^31-1 = 2147483647    |
+| `Integer.MIN_VALUE`   | -2^31 = -2147483648    |
 | `Math.abs(-4)`        | Absolute value 4       |
 | `Math.ceil(4.84)`     | Ceiling of 4.84 is 5.0 |
 | `Math.floor(4.84)`    | Floor of 4.84 is 4.0   |
@@ -797,8 +797,8 @@ Misc
 ```java
 
 int number = 123456;
-int length = (int) Math.log10(number) + 1;
-System.out.println(length);
+        int length = (int) Math.log10(number) + 1;
+        System.out.println(length);
 
 // Outputs: 6
 ```

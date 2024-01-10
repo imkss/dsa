@@ -2,7 +2,7 @@ package _Basic;
 
 public class RevString {
     public static void main(String[] args) {
-        String str = "Kr Sunny Suman";
+        String str = "Sunny";
         System.out.println(Printreverse(str));
     }
 

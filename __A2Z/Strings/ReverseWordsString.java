@@ -1,4 +1,4 @@
-package A2Z.Strings;
+package __A2Z.Strings;
 
 public class ReverseWordsString {
     public static void main(String[] args) {

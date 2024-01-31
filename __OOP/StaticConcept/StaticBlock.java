@@ -1,4 +1,4 @@
-package __OOP.StaticConcenpt;
+package __OOP.StaticConcept;
 
 // this is a demo to show initialisation of static variables
 public class StaticBlock {

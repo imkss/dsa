@@ -1,4 +1,4 @@
-package __OOP.StaticConcenpt;
+package __OOP.StaticConcept;
 //class Test{
 //    static String name;
 //    public Test(String name){

@@ -1,4 +1,4 @@
-package __OOP.StaticConcenpt;
+package __OOP.StaticConcept;
 
 public class Main {
     public static void main(String[] args) {

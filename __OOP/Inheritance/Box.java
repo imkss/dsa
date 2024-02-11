@@ -3,6 +3,7 @@ public class Box {
 double l;
 double w;
 double h;
+double weight = 2;
     Box() {
         this.l = -1;
         this.w = -1;

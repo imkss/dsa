@@ -7,7 +7,7 @@ public class Main {
         Shapes square = new Square();
 
 //        shape.area();
-//        circle.area();
-        square.area();
+        circle.area();
+//        square.area();
     }
 }

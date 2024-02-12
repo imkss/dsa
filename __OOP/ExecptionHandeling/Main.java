@@ -6,8 +6,11 @@ public class Main {
         int b = 0;
         try{
 //           divide(a, b);
-        throw new Exception("Just for Mimicking");
-        } catch (ArithmeticException e){
+            String name = "Kumar";
+            if(name.equals("Kumar")) {
+                throw new MyException("Name Exception");
+            }
+        } catch (MyException e){
             System.out.println(e.getMessage());
         }
         catch (Exception e){

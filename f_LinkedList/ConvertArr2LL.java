@@ -14,6 +14,13 @@ public class ConvertArr2LL {
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = Arr2LL(arr);
-        System.out.println(head.data);
+//        System.out.println(head.next);
+
+        Node temp = head;
+        while(temp != null) {
+            System.out.println(temp.data + ", " + temp.next);
+            temp = temp.next;
+        }
     }
+
 }

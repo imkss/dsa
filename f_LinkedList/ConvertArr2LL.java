@@ -11,6 +11,16 @@ public class ConvertArr2LL {
     return head;
     }
 
+    public static int LengthOfLL(Node head) {
+        int cnt = 0;
+        Node temp = head;
+        while(temp != null){
+            cnt++;
+            temp = temp.next;
+        }
+        return cnt;
+    }
+
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = Arr2LL(arr);
@@ -18,9 +28,12 @@ public class ConvertArr2LL {
 
         Node temp = head;
         while(temp != null) {
-            System.out.println(temp.data + ", " + temp.next);
+//            System.out.println(temp.data + ", " + temp.next);
             temp = temp.next;
         }
+
+       int len = LengthOfLL(head);
+        System.out.println(len);
     }
 
 }

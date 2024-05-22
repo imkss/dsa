@@ -21,6 +21,15 @@ public class ConvertArr2LL {
         return cnt;
     }
 
+    public static boolean SearchInLL(Node head, int num) {
+        Node temp = head;
+        while(temp != null) {
+            if(temp.data == num) return true;
+            temp = temp.next;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = Arr2LL(arr);
@@ -33,7 +42,9 @@ public class ConvertArr2LL {
         }
 
        int len = LengthOfLL(head);
-        System.out.println(len);
+//        System.out.println(len);
+
+        System.out.println(SearchInLL(head, 18));
     }
 
 }

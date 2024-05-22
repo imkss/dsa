@@ -1,5 +1,5 @@
 package f_LinkedList;
-public class ConvertArr2LL {
+public class WorkOnLL {
     public static Node Arr2LL(int[] arr) {
     Node head = new Node(arr[0]);
     Node mover = head;

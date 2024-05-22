@@ -17,6 +17,6 @@ public class LearnLL {
     public static void main(String[] args) {
         Node x = new Node(5);
         Node y = new Node(10, x);
-        System.out.println(y.next);
+        System.out.println(x.data);
     }
 }

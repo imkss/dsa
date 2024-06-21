@@ -54,7 +54,7 @@ public class BasicsOnLL {
         return head;
     }
 
-    public static Node removeK(Node head, int k) {
+    public static Node removeKthNode(Node head, int k) {
         if(head == null) return head;
         if(k == 1) {
             head = head.next;
@@ -75,6 +75,27 @@ public class BasicsOnLL {
         return head;
     }
 
+    public static Node removeVal(Node head, int val) {
+        if(head == null) return head;
+        if(head.data == val) {
+            head = head.next;
+            return head;
+        }
+        int cnt = 0;
+        Node temp = head;
+        Node prev = null;
+        while(temp != null) {
+            cnt++;
+            if(cnt == val) {
+                prev.next = prev.next.next;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = arr2LL(arr);
@@ -83,7 +104,7 @@ public class BasicsOnLL {
 //        System.out.println(searchInLL(head, 18));
 //        printLL(removeHead(head));
 //        printLL(removeTail(head));
-        printLL(removeK(head, 9));
+        printLL(removeKthNode(head, 9));
     }
 
 }

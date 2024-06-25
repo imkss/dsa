@@ -94,17 +94,23 @@ public class BasicsOnLL {
         return head;
     }
 
+    public static Node addElementAtHead(Node head, int k) {
+       return new Node(k, head);
+    }
+
+
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = arr2LL(arr);
-        System.out.println(head);
+        printLL(addElementAtHead(head, 11));
+
+//        System.out.println(head);
 //        System.out.println(head.next);
 //        System.out.println(lengthOfLL(head));
 //        System.out.println(searchInLL(head, 18));
 //        printLL(removeHead(head));
 //        printLL(removeTail(head));
 //        printLL(removeKthNode(head, 2));
-        printLL(removeVal(head, 21));
+//        printLL(removeVal(head, 21));
     }
-
 }

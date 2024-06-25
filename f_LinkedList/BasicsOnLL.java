@@ -94,15 +94,24 @@ public class BasicsOnLL {
         return head;
     }
 
-    public static Node addElementAtHead(Node head, int k) {
-       return new Node(k, head);
+    public static Node addEleAtHead(Node head, int ele) {
+       return new Node(ele, head);
     }
 
+    public static Node addEleAtEnd(Node head, int ele) {
+        if(head == null) return new Node(ele);
+        Node temp = head;
+        while(temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = new Node(ele);
+        return head;
+    }
 
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = arr2LL(arr);
-        printLL(addElementAtHead(head, 11));
+        printLL(addEleAtEnd(head, 7));
 
 //        System.out.println(head);
 //        System.out.println(head.next);

@@ -81,12 +81,10 @@ public class BasicsOnLL {
             head = head.next;
             return head;
         }
-        int cnt = 0;
         Node temp = head;
         Node prev = null;
-        while(temp != null) {
-            cnt++;
-            if(cnt == val) {
+        while(temp != null){
+            if(temp.data == val) {
                 prev.next = prev.next.next;
                 break;
             }
@@ -99,12 +97,14 @@ public class BasicsOnLL {
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = arr2LL(arr);
+        System.out.println(head);
 //        System.out.println(head.next);
 //        System.out.println(lengthOfLL(head));
 //        System.out.println(searchInLL(head, 18));
 //        printLL(removeHead(head));
 //        printLL(removeTail(head));
-        printLL(removeKthNode(head, 9));
+//        printLL(removeKthNode(head, 2));
+        printLL(removeVal(head, 21));
     }
 
 }

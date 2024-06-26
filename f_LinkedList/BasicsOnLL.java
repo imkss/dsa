@@ -108,11 +108,32 @@ public class BasicsOnLL {
         return head;
     }
 
+    public static Node insertAtKthEle(Node head, int ele, int k) {
+        if(head == null){
+            if(k == 1) return new Node(ele);
+            else return null;
+        }
+        if(k == 1) return new Node(ele, head);
+
+        int cnt = 1;
+        Node temp = head;
+        while(temp != null) {
+        cnt++;
+        if(cnt == k) {
+            Node x = new Node(ele, temp.next);
+            temp.next = x;
+            break;
+        }
+        temp = temp.next;
+    }
+    return head;
+    }
+
     public static void main(String[] args) {
         int[] arr = {19, 34, 1, 76, 9, 21};
         Node head = arr2LL(arr);
-        printLL(addEleAtEnd(head, 7));
-
+            printLL(insertAtKthEle(head, 11, 2));
+//        printLL(addEleAtEnd(head, 7));
 //        System.out.println(head);
 //        System.out.println(head.next);
 //        System.out.println(lengthOfLL(head));
